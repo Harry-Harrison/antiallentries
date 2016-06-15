@@ -21,10 +21,10 @@ class AntiAllEntriesPlugin extends BasePlugin
 		return Craft::t('Anti-All Entries');
 	}
 
-    public function getDescription()
-    {
-        return Craft::t('Removes the All Entries item from Craft\'s Entries view.');
-    }
+	public function getDescription()
+	{
+		return Craft::t('Removes the All Entries item from Craft\'s Entries view.');
+	}
 
     public function getDocumentationUrl()
     {
