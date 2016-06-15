@@ -6,5 +6,13 @@
         "notes": [
             "[Added] Initial release"
         ]
+    },
+    {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/harry-harrison/antiallentries/archive/master.zip",
+        "date": "2016-06-15T09:46:17.097Z",
+        "notes": [
+            "[Added] Fixing spacing"
+        ]
     }
 ]
