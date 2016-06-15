@@ -16,10 +16,10 @@ namespace Craft;
 
 class AntiAllEntriesPlugin extends BasePlugin
 {
-	public function getName()
-	{
-		return Craft::t('Anti-All Entries');
-	}
+    public function getName()
+    {
+        return Craft::t('Anti-All Entries');
+    }
 
 	public function getDescription()
 	{
@@ -36,25 +36,25 @@ class AntiAllEntriesPlugin extends BasePlugin
         return 'https://raw.githubusercontent.com/harry-harrison/antiallentries/master/releases.json';
     }
 
-	public function getVersion()
-	{
-		return '1.0.0';
-	}
+    public function getVersion()
+    {
+        return '1.0.0';
+    }
 
     public function getSchemaVersion()
     {
         return '1.0.0';
     }
 
-	public function getDeveloper()
-	{
-		return 'Harry Harrison';
-	}
+    public function getDeveloper()
+    {
+        return 'Harry Harrison';
+    }
 
-	public function getDeveloperUrl()
-	{
-		return 'http://harryharrison.co';
-	}
+    public function getDeveloperUrl()
+    {
+        return 'http://harryharrison.co';
+    }
 
     public function hasCpSection()
     {
