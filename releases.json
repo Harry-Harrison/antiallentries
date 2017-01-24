@@ -23,5 +23,14 @@
             "[Added] Now renames Singles to Pages",
             "[Fixed] Changed documentation URL to be that of the repo instead of the readme"
         ]
+    },
+    {
+        "version": "1.1.1",
+        "downloadUrl": "https://github.com/harry-harrison/antiallentries/archive/master.zip",
+        "date": "2017-01-24T12:55:11+00:00",
+        "notes": [
+            "[Added] Now comes with a settings panel to allow renaming of the Pages tab",
+            "[Added] Added hiding toggle to make searching all entries possible."
+        ]
     }
 ]

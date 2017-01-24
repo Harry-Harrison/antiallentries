@@ -38,7 +38,7 @@ class AntiAllEntriesPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.1.0';
+        return '1.1.1';
     }
 
     public function getSchemaVersion()
@@ -61,14 +61,33 @@ class AntiAllEntriesPlugin extends BasePlugin
         return false;
     }
 
+    public function getSettingsHtml()
+    {
+        return craft()->templates->render('antiallentries/settings', array(
+            'settings' => $this->getSettings()
+        ));
+    }
+
+    protected function defineSettings()
+    {
+        return array(
+            'singlesLabel' => array(AttributeType::String, 'default' => 'Singles', 'required' => true),
+            'showAllEntries' => array(AttributeType::Bool, 'default' => 0),
+        );
+    }
+
     public function modifyEntrySources(&$sources, $context)
     {
+        $settings = $this->getSettings();
+
         if ($context == 'index')
         {
             // Remove All Entries
-            unset($sources['*']);
-            // Rename Singles to Pages
-            $sources['singles'] = array('label' => 'Pages');
+            if ($settings->showAllEntries == 0) {
+                unset($sources['*']);
+            }
+            // Rename Singles to singlesLabel
+            $sources['singles']['label'] = $settings->singlesLabel;
         }
     }
 }

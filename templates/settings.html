@@ -1,0 +1,20 @@
+{% import "_includes/forms" as forms %}
+{{ forms.textField({
+    label: "Singles Label"|t,
+    id: 'singlesLabel',
+    name: 'singlesLabel',
+    required: settings.singlesLabel,
+    instructions: "What would you like Singles to be renamed to?"|t,
+    value: settings.singlesLabel,
+    errors: settings.getErrors('singlesLabel')
+    })
+}}
+
+{{ forms.checkbox({
+    label: "Show the All Entries section?"|t,
+    id: 'showAllEntries',
+    name: 'showAllEntries',
+    checked: settings.showAllEntries,
+    errors: settings.getErrors('showAllEntries')
+    })
+}}
