@@ -23,12 +23,12 @@ class AntiAllEntriesPlugin extends BasePlugin
 
 	public function getDescription()
 	{
-		return Craft::t('Removes the All Entries item from Craft\'s Entries view.');
+		return Craft::t('Removes the All Entries source from Craft\'s Entries view and renames Singles source to Pages.');
 	}
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/harry-harrison/antiallentries/blob/master/README.md';
+        return 'https://github.com/harry-harrison/antiallentries/';
     }
 
     public function getReleaseFeedUrl()
@@ -38,12 +38,12 @@ class AntiAllEntriesPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.0.1';
+        return '1.1.0';
     }
 
     public function getSchemaVersion()
     {
-        return '1.0.1';
+        return '1.0.0';
     }
 
     public function getDeveloper()
@@ -65,7 +65,10 @@ class AntiAllEntriesPlugin extends BasePlugin
     {
         if ($context == 'index')
         {
+            // Remove All Entries
             unset($sources['*']);
+            // Rename Singles to Pages
+            $sources['singles'] = array('label' => 'Pages');
         }
     }
 }

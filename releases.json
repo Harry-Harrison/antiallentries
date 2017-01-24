@@ -14,5 +14,14 @@
         "notes": [
             "[Added] Fixing spacing"
         ]
+    },
+    {
+        "version": "1.1.0",
+        "downloadUrl": "https://github.com/harry-harrison/antiallentries/archive/master.zip",
+        "date": "2017-01-24T10:17:35+00:00",
+        "notes": [
+            "[Added] Now renames Singles to Pages",
+            "[Fixed] Changed documentation URL to be that of the repo instead of the readme"
+        ]
     }
 ]

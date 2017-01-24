@@ -1,6 +1,6 @@
 # Anti-All Entries plugin for Craft CMS
 
-Removes the All Entries item from Craft's Entries view.
+Removes the **All Entries** item from Craft's Entries view and renamed **Singles** to **Pages**
 
 ## Installation
 
@@ -18,5 +18,9 @@ Anti-All Entries works on Craft 2.4.x and Craft 2.5.x.
 ### 1.0.0 -- 2016.06.14
 
 * Initial release
+
+### 1.1.0 -- 2017.01.24
+
+* Renaming Singles to Pages
 
 Brought to you by [Harry Harrison](http://harryharrison.co/)
